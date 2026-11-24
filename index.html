@@ -327,7 +327,7 @@
     .ubicacion-grid{grid-template-columns:1fr;}
   }
 
-  /* ===== CTA / FORM ===== */
+  /* ===== CTA ===== */
   .cta-section{
     padding:100px 0 130px;
     background:var(--cream);
@@ -364,66 +364,25 @@
   .discount-pill .pct{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--gold-soft);}
   .discount-pill .txt{font-size:13px;color:rgba(255,253,249,0.8);font-weight:300;line-height:1.4;}
 
-  form{position:relative;z-index:1;display:flex;flex-direction:column;gap:14px;}
-  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-  input,select{
-    width:100%;
-    background:rgba(255,253,249,0.06);
-    border:1px solid rgba(255,253,249,0.28);
-    padding:14px 16px;
-    color:var(--paper);
-    font-family:'Jost',sans-serif;
-    font-size:14.5px;
-    font-weight:300;
-  }
-  input::placeholder{color:rgba(255,253,249,0.48);}
-  input:focus,select:focus{outline:2px solid var(--gold-soft);outline-offset:1px;}
-  select option{color:#000;}
-  .submit-btn{
+  .whatsapp-alt{
+    position:relative;z-index:1;
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    padding:18px;
     background:var(--gold);
     color:var(--ink);
     font-weight:600;
-    font-size:14.5px;
+    font-size:15px;
     letter-spacing:0.03em;
-    padding:16px;
-    border:none;
-    cursor:pointer;
     transition:background 0.2s ease, transform 0.15s ease;
-    margin-top:4px;
-    font-family:'Jost',sans-serif;
   }
-  .submit-btn:hover{background:var(--gold-soft);}
-  .submit-btn:active{transform:scale(0.98);}
-  .submit-btn:focus-visible{outline:3px solid var(--paper);outline-offset:2px;}
-  .form-foot{font-size:12px;color:rgba(255,253,249,0.5);text-align:center;margin-top:2px;font-weight:300;}
-
-  .whatsapp-alt{
-    display:flex;align-items:center;justify-content:center;gap:10px;
-    margin-top:8px;
-    padding:14px;
-    border:1px solid rgba(255,253,249,0.28);
-    color:var(--paper);
-    font-weight:500;
-    font-size:14.5px;
-    transition:background 0.2s ease;
-  }
-  .whatsapp-alt:hover{background:rgba(255,253,249,0.08);}
-  .whatsapp-alt svg{width:18px;height:18px;fill:#3ec968;flex-shrink:0;}
+  .whatsapp-alt:hover{background:var(--gold-soft);}
+  .whatsapp-alt:active{transform:scale(0.98);}
+  .whatsapp-alt:focus-visible{outline:3px solid var(--paper);outline-offset:2px;}
+  .whatsapp-alt svg{width:20px;height:20px;fill:var(--ink);flex-shrink:0;}
 
   @media (max-width:780px){
     .cta-card{grid-template-columns:1fr;padding:42px 26px;}
-    .form-row{grid-template-columns:1fr;}
   }
-
-  #form-success{
-    display:none;
-    text-align:center;
-    padding:40px 20px;
-    position:relative;z-index:1;
-  }
-  #form-success.show{display:block;}
-  #form-success h3{color:var(--gold-soft);font-size:25px;margin-bottom:10px;}
-  #form-success p{color:rgba(255,253,249,0.78);font-size:15px;font-weight:300;}
 
   /* ===== FOOTER ===== */
   footer{
@@ -667,51 +626,13 @@
       <div class="cta-text">
         <div class="intro-kicker">Reserva tu lote</div>
         <h2>Reserva tu lote y asegura tu inversión.</h2>
-        <p>Déjanos tus datos y un asesor de Condominio Amanecer te contacta con la disponibilidad actualizada, planos y condiciones.</p>
+        <p>Escríbenos por WhatsApp y un asesor de Condominio Amanecer te responde con la disponibilidad actualizada, planos y condiciones.</p>
       </div>
 
       <div>
-        <form id="leadForm">
-          <input type="text" name="nombre" placeholder="Nombre completo" required>
-          <div class="form-row">
-            <input type="tel" name="telefono" placeholder="WhatsApp" required>
-            <input type="email" name="email" placeholder="Correo electrónico" required>
-          </div>
-          <select name="interes" required>
-            <option value="" disabled selected>¿Qué lote te interesa?</option>
-            <option value="Quiero asesoría">Quiero asesoría</option>
-            <option value="Lote 1">Lote 1</option>
-            <option value="Lote 2">Lote 2</option>
-            <option value="Lote 3">Lote 3</option>
-            <option value="Lote 4">Lote 4</option>
-            <option value="Lote 5">Lote 5</option>
-            <option value="Lote 6">Lote 6</option>
-            <option value="Lote 7">Lote 7</option>
-            <option value="Lote 8">Lote 8</option>
-            <option value="Lote 9">Lote 9</option>
-            <option value="Lote 10">Lote 10</option>
-            <option value="Lote 11">Lote 11</option>
-            <option value="Lote 12">Lote 12</option>
-            <option value="Lote 13">Lote 13</option>
-            <option value="Lote 14">Lote 14</option>
-            <option value="Lote 15">Lote 15</option>
-            <option value="Lote 16">Lote 16</option>
-            <option value="Lote 17">Lote 17</option>
-            <option value="Lote 18">Lote 18</option>
-            <option value="Lote 19">Lote 19</option>
-          </select>
-          <button type="submit" class="submit-btn upper">Quiero información y disponibilidad</button>
-          <p class="form-foot">Respuesta dentro de 24 horas hábiles.</p>
-        </form>
-
-        <div id="form-success">
-          <h3>¡Listo!</h3>
-          <p>Recibimos tus datos. Un asesor de Condominio Amanecer te va a contactar pronto.</p>
-        </div>
-
         <a class="whatsapp-alt" id="waLink" href="#" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.65 0-3.18-.46-4.5-1.26l-.32-.19-3.36.88.9-3.27-.21-.34A8 8 0 1 1 20 12a8 8 0 0 1-8 8zm4.4-5.6c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.39-1.32-1.62-.14-.24-.02-.37.1-.5.12-.12.27-.32.4-.48.13-.16.18-.27.27-.45.08-.18.04-.33-.04-.46-.08-.12-.42-1.02-.58-1.4-.15-.36-.31-.31-.43-.31-.11 0-.24-.02-.37-.02-.13 0-.34.05-.52.27-.18.22-.7.69-.7 1.67 0 .98.71 1.93.81 2.06.1.14 1.4 2.13 3.4 2.9 1.99.78 1.99.52 2.34.49.35-.03 1.12-.46 1.28-.9.16-.45.16-.83.11-.9-.04-.08-.18-.12-.42-.24z"/></svg>
-          Prefiero escribir por WhatsApp
+          Escríbenos por WhatsApp
         </a>
       </div>
     </div>
@@ -744,15 +665,6 @@
   const waMsg = encodeURIComponent("Hola, quiero más información sobre los lotes de Condominio Amanecer en El Rosario de Peñuelas.");
   document.getElementById('waLink').href = `https://wa.me/${waNumber}?text=${waMsg}`;
 
-  // Form handling (no backend — placeholder success state)
-  // TODO: reemplazar por integración real (MailerLite, Google Sheets, email, etc.)
-  const form = document.getElementById('leadForm');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    form.style.display = 'none';
-    document.getElementById('form-success').classList.add('show');
-    // Aquí se debería enviar el lead a tu sistema (MailerLite, webhook, etc.)
-  });
 </script>
 
 </body>
