@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="manifest" href="assets/site.webmanifest">
-<meta name="theme-color" content="#1c1916">
+<meta name="theme-color" content="#1e3346">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,14 +19,14 @@
 
 <style>
   :root{
-    --gold:#b5904f;
-    --gold-deep:#8f6f37;
-    --gold-soft:#d9bf85;
-    --cream:#faf6ee;
-    --paper:#fffdf9;
-    --ink:#1c1916;
-    --ink-soft:#69635a;
-    --line:rgba(28,25,22,0.11);
+    --gold:#de8a2c;
+    --gold-deep:#a85a14;
+    --gold-soft:#e6a249;
+    --cream:#f7f3ec;
+    --paper:#fcfaf6;
+    --ink:#1e3346;
+    --ink-soft:#566676;
+    --line:rgba(30,51,70,0.12);
     --max:1180px;
   }
 
@@ -70,7 +70,7 @@
   /* ===== NAV ===== */
   .nav{
     position:fixed;top:0;left:0;right:0;z-index:100;
-    background:rgba(255,253,249,0.92);
+    background:rgba(252,250,246,0.92);
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
   }
@@ -91,7 +91,7 @@
     min-height:100vh;
     display:flex;
     align-items:flex-end;
-    background:linear-gradient(180deg, rgba(20,16,10,0.08) 0%, rgba(20,16,10,0.38) 60%, rgba(15,12,8,0.78) 100%), url('assets/hero.jpg');
+    background:linear-gradient(180deg, rgba(14,26,38,0.08) 0%, rgba(14,26,38,0.38) 60%, rgba(12,22,33,0.78) 100%), url('assets/hero.jpg');
     background-size:cover;
     background-position:center 35%;
     padding-top:76px;
@@ -119,7 +119,7 @@
   .hero h1 em{font-style:italic;color:var(--gold-soft);font-weight:600;}
   .hero-sub{
     font-size:clamp(15px,2vw,18px);
-    color:rgba(255,253,249,0.82);
+    color:rgba(252,250,246,0.82);
     max-width:480px;
     margin-top:20px;
     line-height:1.6;
@@ -129,15 +129,15 @@
     display:flex;flex-wrap:wrap;gap:44px;
     margin-top:48px;
     padding-top:28px;
-    border-top:1px solid rgba(255,253,249,0.22);
+    border-top:1px solid rgba(252,250,246,0.22);
   }
   .hero-meta div{display:flex;flex-direction:column;gap:6px;}
-  .hero-meta .label{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,253,249,0.6);font-weight:300;}
+  .hero-meta .label{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(252,250,246,0.6);font-weight:300;}
   .hero-meta .value{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--gold-soft);}
   .badge-anteproyecto{
     position:absolute;top:100px;right:28px;
-    background:rgba(255,253,249,0.1);
-    border:1px solid rgba(255,253,249,0.4);
+    background:rgba(252,250,246,0.1);
+    border:1px solid rgba(252,250,246,0.4);
     color:var(--paper);
     font-size:11.5px;font-weight:500;letter-spacing:0.12em;
     padding:9px 16px;
@@ -179,7 +179,7 @@
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:1px;
-    background:rgba(255,253,249,0.12);
+    background:rgba(252,250,246,0.12);
   }
   .stat{
     background:var(--ink);
@@ -198,7 +198,7 @@
     font-size:12px;
     letter-spacing:0.08em;
     text-transform:uppercase;
-    color:rgba(255,253,249,0.6);
+    color:rgba(252,250,246,0.6);
     font-weight:300;
   }
   @media (max-width:760px){
@@ -214,7 +214,7 @@
     background:var(--ink);
     border:1px solid var(--line);
     overflow:hidden;
-    box-shadow:0 24px 60px -20px rgba(28,25,22,0.35);
+    box-shadow:0 24px 60px -20px rgba(30,51,70,0.35);
   }
   .reel-frame iframe{width:100%;height:100%;border:0;}
   @media (max-width:480px){
@@ -260,8 +260,8 @@
   .ind-network span{
     font-size:12.5px;font-weight:500;letter-spacing:0.03em;
     color:var(--gold-deep);
-    background:rgba(181,144,79,0.08);
-    border:1px solid rgba(181,144,79,0.25);
+    background:rgba(222,138,44,0.08);
+    border:1px solid rgba(222,138,44,0.25);
     padding:8px 16px;
   }
 
@@ -277,7 +277,7 @@
   }
   thead th:last-child, tbody td:last-child{text-align:right;}
   tbody td{padding:11px 18px;border-bottom:1px solid var(--line);color:var(--ink-soft);font-weight:300;}
-  tbody tr:nth-child(even){background:rgba(28,25,22,0.02);}
+  tbody tr:nth-child(even){background:rgba(30,51,70,0.02);}
   tbody tr.grande td:first-child{font-weight:600;color:var(--gold-deep);}
   tfoot td{
     padding:16px 18px;font-weight:600;color:var(--ink);
@@ -311,8 +311,8 @@
   .ubicacion-list{list-style:none;}
   .ubicacion-list li{
     padding:18px 0;
-    border-bottom:1px solid rgba(255,253,249,0.14);
-    font-size:16px;color:rgba(255,253,249,0.85);
+    border-bottom:1px solid rgba(252,250,246,0.14);
+    font-size:16px;color:rgba(252,250,246,0.85);
     display:flex;gap:14px;
     font-weight:300;
     line-height:1.5;
@@ -320,7 +320,7 @@
   .ubicacion-list li::before{content:'—';color:var(--gold-soft);flex-shrink:0;}
   .map-frame{
     overflow:hidden;
-    border:1px solid rgba(255,253,249,0.18);
+    border:1px solid rgba(252,250,246,0.18);
     aspect-ratio:4/3;
   }
   .map-frame iframe{width:100%;height:100%;border:0;}
@@ -348,22 +348,22 @@
     position:absolute;
     width:440px;height:440px;
     border-radius:50%;
-    background:radial-gradient(circle, rgba(181,144,79,0.16) 0%, transparent 70%);
+    background:radial-gradient(circle, rgba(230,162,73,0.10) 0%, transparent 70%);
     top:-170px;right:-130px;
   }
   .cta-text{position:relative;z-index:1;}
   .cta-text .intro-kicker{color:var(--gold-soft);}
   .cta-text h2{color:var(--paper);font-size:clamp(27px,3.4vw,38px);line-height:1.3;}
-  .cta-text p{color:rgba(255,253,249,0.78);margin-top:18px;font-size:15.5px;line-height:1.65;max-width:420px;font-weight:300;}
+  .cta-text p{color:rgba(252,250,246,0.78);margin-top:18px;font-size:15.5px;line-height:1.65;max-width:420px;font-weight:300;}
   .discount-pill{
     display:inline-flex;align-items:baseline;gap:10px;
-    background:rgba(181,144,79,0.1);
-    border:1px solid rgba(217,191,133,0.4);
+    background:rgba(222,138,44,0.1);
+    border:1px solid rgba(230,162,73,0.4);
     padding:12px 20px;
     margin-top:26px;
   }
   .discount-pill .pct{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--gold-soft);}
-  .discount-pill .txt{font-size:13px;color:rgba(255,253,249,0.8);font-weight:300;line-height:1.4;}
+  .discount-pill .txt{font-size:13px;color:rgba(252,250,246,0.8);font-weight:300;line-height:1.4;}
 
   .whatsapp-alt{
     position:relative;z-index:1;
@@ -411,7 +411,7 @@
   .footer-credit a{
     color:var(--gold-deep);
     font-weight:500;
-    border-bottom:1px solid rgba(143,111,55,0.35);
+    border-bottom:1px solid rgba(168,90,20,0.35);
     transition:border-color 0.2s ease;
   }
   .footer-credit a:hover{border-color:var(--gold-deep);}
@@ -451,7 +451,7 @@
 
 <div class="horizon">
   <svg viewBox="0 0 1200 52" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,32 Q300,14 600,30 T1200,24 L1200,52 L0,52 Z" fill="#1c1916" opacity="0.05"/>
+    <path d="M0,32 Q300,14 600,30 T1200,24 L1200,52 L0,52 Z" fill="#1e3346" opacity="0.05"/>
     <circle class="sun" id="sun" cx="600" cy="52" r="18"/>
   </svg>
 </div>
